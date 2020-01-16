@@ -1,0 +1,89 @@
+/*type selector*/
+h1 {
+  color: red;
+}
+/*
+*{
+    bu tum tipleri etkiler
+}
+*/
+
+/*class selector*/
+.name {
+  color: blue;
+}
+
+/*id selector*/
+#name {
+  color: blue;
+}
+
+[data-name="name"] {
+  color: green;
+}
+
+/* ONCELIKLER
+element = 0,0,1
+classes = 0,1,0
+id = 1,0,0
+inline style bigger
+
+*/
+div ol li {
+  /*0 0 3*/
+  color: blue;
+}
+
+div ol li.home {
+  /*0 1 3*/
+  color: red;
+}
+
+#home {
+  /*1 0 0 */
+  color: gray;
+}
+
+/*Cascading Style Sheet, cascading asagida goruldugu manada*/
+.birinciRed {
+  color: red;
+}
+/*Ikinci gecerli*/
+.ikinciGreen {
+  color: green;
+}
+
+/*Inheritance*/
+ol {
+  color: red;
+}
+
+.kalitim {
+  color: inherit;
+}
+
+.default {
+  color: initial;
+}
+
+.box {
+  /*Iki cesit eleman var, block ve inline
+  box yapisi yani yukseklik ve genislik block yapilar icin
+  gecerli inline yapilar icin degil. Bu kutuya display:inline dersem height ve weight hukmunu yitirir*/
+  /* display: inline; */
+  background: blue;
+  /*100'e 100'luk bir kutu tanimladim*/
+  height: 100px;
+  width: 100px;
+  /* 10px padding ile 120x120 kutum oldu */
+  padding: 10px;
+  /* 10px border ile 140x140 kutum oldu */
+  border: 10px solid green;
+  /* 10px margin ile kutum 140x140 kaldi 
+  cunku margin diger kutulari itmek uzerine*/
+  margin: 10px;
+
+  /*Border ve padding'in kutu boyutumu arttirmayip icerde yer edinmesini istiyorsam*/
+  /* box-sizing: default olarak content-box */
+  box-sizing: border-box;
+}
