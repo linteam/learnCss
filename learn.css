@@ -114,3 +114,19 @@ h1 {
   border: solid 1px;
   background: #00ff00;
 }
+
+.content {
+  /* background: url("assets/background.jpg") center/cover no-repeat; */
+  /* background-size: cover; 
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;*/
+  background: url("assets/background.jpg") no-repeat;
+
+  /* radial gradient'e fixed parallax effekti olur */
+  /* background: radial-gradient(skyblue, crimson) fixed; */
+  /* background-attachment: fixed; */
+
+  /* background: red; */
+}
