@@ -199,3 +199,18 @@ h1 {
 input:focus {
   outline-color: green;
 }
+
+.myNav {
+  display: block;
+}
+
+/* 700px altinda gecerli olacak kod 
+min-width ile tersi de yapilabilirdi
+and ile ara degerleri de atayabilirsin
+width yerine orientation da kontrol edilebilir.*/
+@media (min-width: 700px) and (max-width: 1000px) {
+  .myNav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
