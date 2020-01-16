@@ -159,3 +159,27 @@ h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+.parent {
+  padding: 20px;
+  border: solid 2px blue;
+  /* position: relative; */
+}
+
+.child {
+  padding: 20px;
+  background: red;
+  /* ***** position'i anlamak onemli */
+
+  /* position: relative, element'in document flow'daki pozisyonunu korur. Bu da left,right,top,bottom ve z-index kullanimina imkan verir*/
+  position: relative;
+  top: 10px;
+
+  /* absolute yaparsak yine hareket kabiliyeti olur ama document flow'u kirar. Eger parent element'i position relative ise absolute onu referans alir */
+  /* position: absolute;
+  top: 20px; */
+
+  /* fixed document'i referans alir parent elementi degil */
+  /* position: fixed;
+  top: 20px; */
+}
