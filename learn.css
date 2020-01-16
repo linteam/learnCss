@@ -87,3 +87,17 @@ ol {
   /* box-sizing: default olarak content-box */
   box-sizing: border-box;
 }
+
+/* Css Units */
+h1 {
+  /* font-size: 30px; */
+  /*em relative bir birimdir bu elemanin font-size'ni birim deger olarak alir.*/
+  /* padding: 2em; */
+
+  /* rem em gibidir, default font-size'i temel alir.
+  Default font-size 16px'dir */
+  padding: 2rem; /*32px*/
+
+  /* Percentage de kullanilabilir. Parent element'in fontsize'na gore olceklenir.*/
+  font-size: 200%; /*32px*/
+}
