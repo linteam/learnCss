@@ -149,3 +149,13 @@ h1 {
   /* display: none; */
   transition: 1s;
 }
+
+h1 {
+  /* font-size: 2rem; */
+  /* font-style: oblique; */
+  /* font-family: "Roboto Condensed", sans-serif; */
+  /* font-weight: 400; */
+  font: italic 400 2rem "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
