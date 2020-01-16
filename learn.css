@@ -183,3 +183,19 @@ h1 {
   /* position: fixed;
   top: 20px; */
 }
+
+.pseudo li:first-child {
+  color: blue;
+}
+
+.pseudo li:nth-child(4) {
+  color: purple;
+}
+
+.pseudo li:hover {
+  color: red;
+}
+
+input:focus {
+  outline-color: green;
+}
