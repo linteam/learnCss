@@ -1,3 +1,5 @@
+/* Ise yarar ipuclarini ***** ile bulabilirsin */
+
 /*type selector*/
 h1 {
   color: red;
@@ -18,6 +20,7 @@ h1 {
   color: blue;
 }
 
+/* ***** */
 [data-name="name"] {
   color: green;
 }
@@ -70,7 +73,7 @@ ol {
   /*Iki cesit eleman var, block ve inline
   box yapisi yani yukseklik ve genislik block yapilar icin
   gecerli inline yapilar icin degil. Bu kutuya display:inline dersem height ve weight hukmunu yitirir*/
-  /* display: inline; */
+  /* display: inline; ***** */
   background: blue;
   /*100'e 100'luk bir kutu tanimladim*/
   height: 100px;
@@ -83,7 +86,7 @@ ol {
   cunku margin diger kutulari itmek uzerine*/
   margin: 10px;
 
-  /*Border ve padding'in kutu boyutumu arttirmayip icerde yer edinmesini istiyorsam*/
+  /* ***** Border ve padding'in kutu boyutumu arttirmayip icerde yer edinmesini istiyorsam*/
   /* box-sizing: default olarak content-box */
   box-sizing: border-box;
 }
@@ -116,7 +119,7 @@ h1 {
 }
 
 .content {
-  /* background: url("assets/background.jpg") center/cover no-repeat; */
+  /* background: url("assets/background.jpg") center/cover no-repeat; ***** */
   /* background-size: cover; 
   background-position-x: center;
   background-position-y: center;
@@ -129,4 +132,20 @@ h1 {
   /* background-attachment: fixed; */
 
   /* background: red; */
+}
+
+h1 {
+  /* Level of transparency - Opacity 0 ise gorunmez eleman */
+  /* 1- opacity: 0; */
+
+  /* ***** transition 1 second bekletir*/
+  /* transition: 1s;
+  opacity: 1; */
+
+  /* opacity 0 ya da visibility hidden ile eleman hala sayfadadir */
+  /* 2- visibility: hidden; */
+
+  /* 3- display: none ile layout'da yokmus gibi olur*/
+  /* display: none; */
+  transition: 1s;
 }
