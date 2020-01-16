@@ -101,3 +101,16 @@ h1 {
   /* Percentage de kullanilabilir. Parent element'in fontsize'na gore olceklenir.*/
   font-size: 200%; /*32px*/
 }
+
+h1 {
+  /* # RGB deger oldugunu gosterir */
+  /* color: #00ff00; */
+  /* Hue (renk_, Saturation, Lightness 
+  hue 0-360 arasi deger alir.0 red, 120 green, 240 blue
+  saturation 0-100 arasi 0 cok golgeli
+  Lightness 0 black, 100 white*/
+  color: hsl(240, 100%, 50%);
+  /* renk border icin de gecerlidir */
+  border: solid 1px;
+  background: #00ff00;
+}
